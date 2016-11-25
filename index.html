@@ -17,6 +17,7 @@ body{
 #Logo{
 	position: relative;
 	left: 2em;
+	height: 1em;
 }
 #ScrollingInfo{
 	position: absolute;
@@ -34,16 +35,21 @@ body{
 </style>
 
 </head>
-<body>
+<body onload="setElements()">
 
-<script>
-	var width = screen.width;
-	var height = screen.height;
-	var header = document.querySelector("#header");
-	var logo = document.querySelector("#Logo");
+<script id="setElements">
+	function setElements(){
+		var width = screen.width;
+		var height = screen.height;
+		var header = document.querySelector("#header");
+		var logo = document.querySelector("#Logo");
+		var scrollinginfo = document.querySelector("#ScrollingInfo");
+		var headerHeight = height/7;
 	
-	header.style.height = height/5
-	logo.style.height = height/6;
+		header.style.height = headerHeight;
+		logo.style.height = height/10;
+		scrollinginfo.style.top = headerHeight - (headerHeight/5);
+	}
 </script>
 	
 <!--Improve navigation-->
