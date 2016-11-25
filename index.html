@@ -11,18 +11,23 @@ body{
 	position: fixed;
 	background-color: rgba(255, 255, 255, 0.67);
 	width: 100%;
-	height: 11%;
+	height: 12%;
 	top: 0;
 	right: 0;
+}
+#Logo{
+	position: relative;
+	left: 2em;
+	top: 3%;
+	height:	74%;
 }
 #ScrollingInfo{
 	position: absolute;
 	width: 100%;
 	height: 2%;
-	top: 8%;
+	top: 9%;
 	right: 0;
 }
-
 #EmailSignUp{
 	position: absolute;
 	top: 11%;
@@ -34,9 +39,9 @@ body{
 </head>
 <body>
 
-<!--Change h1 to logo in future, and improve navigation-->
+<!--Improve navigation-->
 <div id="header">
-	<center><h1>J21 Digital</h1></center>
+	<img id="Logo" src="https://github.com/J21Digital/J21Digital.github.io/blob/master/J21Digital_logo.png?raw=true"/>
 </div>
 
 <div id="ScrollingInfo">
@@ -47,7 +52,6 @@ body{
 <!--<div id="EmailSignUp">
 	<center>
 	<h1>Sign up for updates!</h1>
-
 	<form>
 		<input type="text" id="email" placeholder="Email Address"><br>
 		<input type="submit" id="submitButton" value="Submit" onClick="">
