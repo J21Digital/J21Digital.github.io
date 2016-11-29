@@ -44,15 +44,14 @@ body{
 		var header = document.querySelector("#header");
 		var logo = document.querySelector("#Logo");
 		var scrollinginfo = document.querySelector("#ScrollingInfo");
-		var headerHeight = height/7;
-	
-		header.style.height = headerHeight;
+		var headerHeight = height/6;			
+                header.style.height = headerHeight;
 		logo.style.height = height/10;
 		scrollinginfo.style.top = headerHeight - (headerHeight/5);
 		
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			header.style.height = headerHeight;
-			logo.style.height = headerHeight - (headerHeight/6);
+			logo.style.height = headerHeight - (headerHeight/7);
 			scrollinginfo.style.top = headerHeight - (headerHeight/6);
 		}
 	}
