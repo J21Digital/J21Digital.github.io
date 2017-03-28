@@ -2,23 +2,6 @@
 <head lang="en-US">
 <meta name="google-site-verification" content="ltqHDqFPY8QuNf3WZKStp3QRmyt4P4z6WXPnrxWxf2s" />
 <title>Junction 21 Digital | Bug Tracker</title>
-
-<!--Javascript Scripts-->
-<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js"></script>
-        <script type="text/javascript">
-            //This event is called when the DOM is fully loaded
-            window.addEvent("domready",function(){
-                //Creating a new AJAX request that will request 'test.csv' from the current directory
-                var txtRequest = new Request({
-                    url:"websitebannerinfo.txt",
-                    onSuccess:function(response){
-                        //The response text is available in the 'response' variable
-                        //Set the value of the textarea with the id 'csvResponse' to the response
-                        $("Info").value = response;
-                    }
-                }).send(); //Don't forget to send our request!
-            });
-        </script>-->
 <script>
 	function PageUnavailable(){
 		alert("This page is currently unavailable.");
@@ -106,6 +89,10 @@ li a:hover {
 	position: relative;
 	top: 6em;
 }
+#Responses{
+	position: relative;
+	top: 7em;
+}
 
 input{
 	width: 17em;
@@ -114,6 +101,10 @@ input{
 
 </head>
 <body>
+<script>
+	function SendResponse():
+		
+</script>
 	
 <!--Header-->
 <div id="header">
@@ -140,14 +131,16 @@ input{
 
 <!--Bug Tracker Input Fields-->
 <form id="BugTrackerID">
-	<input type="text" name="firstname" placeholder="First Name"></br></br>
-	<input type="text" name="email" placeholder="Email Address (Not Displayed)"></br></br>
-	<input type="text" name="softwarename" placeholder="Software name (Website, e.t.c.)"></br></br>
-	<textarea rows="6" cols="30" name="issuedescr" placeholder="Description of issue"></textarea></br></br>
+	<input type="text" name="firstname" placeholder="First Name"><br><br>
+	<input type="text" name="email" placeholder="Email Address (Not Displayed)"><br><br>
+	<input type="text" name="softwarename" placeholder="Software name (Website, e.t.c.)"><br><br>
+	<textarea rows="6" cols="30" name="issuedescr" placeholder="Description of issue"></textarea><br><br>
 	<div class="g-recaptcha" data-sitekey="6LftXhcUAAAAAAQhR6hVRdxbb5fs9_sa46-ltAVd"></div>
+	<button type="submit" form="BugTrackerID" value="Submit">Submit</button>
 </form>
-</center>
-
 </div>
+<div id="Responses">
+	
+</div>	
 </body>
 </html>
