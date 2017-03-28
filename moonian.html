@@ -1,1 +1,108 @@
+<html>
+<head lang="en-US">
+<meta name="google-site-verification" content="ltqHDqFPY8QuNf3WZKStp3QRmyt4P4z6WXPnrxWxf2s" />
+<title>Junction 21 Digital | PageName</title>
 
+<style>
+body{
+	background-color: #71B8F2;
+}
+#header{
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.67);
+	width: 100%;
+	height: 16%;
+	top: 0;
+	right: 0;
+}
+#NavigationBar {
+	position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	left: 7em;
+	top: 2.5em;
+	z-index: 0;
+}
+li {
+    float: left;
+	border-right: 1px solid #bbb;
+}
+li a {
+    display: block;
+	background-color: #80b0ff;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	width: 12em;
+}
+/* Change the link color to dark blue on hover */
+li a:hover {
+    background-color: #002766;
+}
+#Logo{
+	position: relative;
+	left: 2em;
+	width: 7em;
+	z-index: 1;
+}
+#ScrollingInfo{
+	position: absolute;
+	width: 100%;
+	height: 17%;
+	top: 8em;
+	right: 0;
+	background-color: #99c2ff;
+}
+#Info{
+	position: relative;
+	top: 10%;
+	color: #e6f0ff;
+	text-shadow: 2px 2px 10px #002966;
+}
+#pagetitle{
+	position: relative;
+	top: 5em;
+	color: white;
+	text-shadow: 2px 2px 10px #002966;
+}
+</style>
+
+</head>
+<body>
+
+<script>
+	function PageUnavailable(){
+		alert("This page is currently unavailable.");
+	}
+	
+	function Refresh(){
+		location.reload();
+	}
+</script>
+	
+<!--Improve navigation-->
+<div id="header">
+	<img id="Logo" src="https://github.com/J21Digital/J21Digital.github.io/blob/master/J21Digital_logo.png?raw=true"/>
+	<ul id="NavigationBar">
+		<li id="home"><a onclick="index.html">Home</a></li>
+		<li id="moonian"><a onclick="Refresh()">Moonian Language</a></li>
+		<li id="news"><a onclick="PageUnavailable()">News</a></li>
+		<li id="software"><a onclick="PageUnavailable()">Software</a></li>
+		<li id="downloads"><a onclick="PageUnavailable()">Downloads</a></li>
+		<li id="contact"><a onclick="PageUnavailable()">Contact</a></li>
+		<li id="about"><a onclick="PageUnavailable()">About</a></li>
+		<li id="bugtracker"><a href="bugtracker.html">Bug Tracker</a></li>
+	</ul>
+	
+	<div id="ScrollingInfo">
+		<marquee id="Info" behavior="scroll" direction="left">WARNING! This website is currently in development, and may not function correctly. Please submit any bugs to the bug-tracker, under "website". Thank you!</marquee>
+	</div>
+</div>
+
+<div id="mainbody">
+
+</div>
+</body>
+</html>
